@@ -1,0 +1,287 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+body{
+    background-image: linear-gradient(to bottom, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    padding: 0;
+    margin: 0;
+    padding: 1rem;
+
+}
+    #container{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+    }
+    .imgRulesDiv{
+        width: 100%;
+        height: 80%;
+        background-image: url(images/image-rules.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #rules{
+        position: relative;
+        height: 100vh;
+        display: none;
+        z-index: 5;
+        background-color: #fff;
+        margin: auto;
+        border-radius: 8px;
+        text-align: center;
+    }
+    #imgRules{
+        position: absolute;
+        top: 30%;
+        left: 20%;
+    }
+    #titleRules{
+        padding-top: 2rem;
+        width: 100%;
+        text-align: center;
+        font-size: 3rem;
+        color: hsl(229, 25%, 31%);
+    }
+    #icon-close{
+        width: 2rem;
+    }
+
+    #initial-page{
+        /* position: relative; */
+        /* background-image: linear-gradient(to bottom, hsl(214, 47%, 23%), hsl(237, 49%, 15%)); */
+        width: 100%;
+        height: 100%;
+    }
+    #scoreDiv{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+
+        border: .5rem solid #a4a3a38a;
+        border-radius: 6px;
+        padding: 1rem;
+        margin-top: 1rem;
+
+    }
+    #placarDiv{
+        height: 100%;
+        width: 6rem;
+        text-align: center;
+        align-items: center;
+        padding: 1rem;
+        background-color: #fff;
+        color:  hsl(229, 64%, 46%);
+        border-radius: 8px;
+    }
+    #placarDiv h1{
+        font-size: 2.5rem;
+        color: hsl(229, 25%, 31%);
+    }
+    #boxGame{
+        position: absolute;
+        width: 20rem;
+        background-image: url(images/bg-triangle.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        margin-top: 2rem;
+    }
+    main{
+        position: relative;
+        margin: auto;
+        width: 100%;
+        height: 60%;
+        padding: 0 5%;
+        display: flex;
+        justify-content: center;
+    }
+  
+    .icon{
+        z-index: 4;
+        background-color: white;
+        width: 8rem;
+        height: 8rem;
+        text-align: center;
+        border-radius: 50%;
+        padding: 7%;
+    }
+    #flex{
+        display: flex;
+        justify-content: space-between;
+    }
+    #block{
+        width: 100%;
+        margin-left: 40%;
+        margin-top: 30%;
+    }
+    .paperDiv{
+        transform: translateX(-2rem);
+        border: 1rem solid hsl(230, 89%, 62%);
+        background-image: url(images/icon-paper.svg);
+        background-repeat: no-repeat;
+        background-size: 3rem;
+        background-position: 50%;
+    }
+    .rockDiv{
+        bottom: 0;
+        transform: translateX(2rem);
+        border: 1rem solid hsl(349, 71%, 52%);
+        background-image: url(images/icon-rock.svg);
+        background-repeat: no-repeat;
+        background-size: 3rem;
+        background-position: 50%;
+    }
+    .scissorsDiv{
+        transform: translateX(-2rem);
+        border: 1rem solid hsl(39, 89%, 49%);
+        background-image: url(images/icon-scissors.svg);
+        background-repeat: no-repeat;
+        background-size: 3rem;
+        background-position: 50%;
+    }
+    #boxOpenRules{
+        width: 100%;
+        text-align: center;
+    }
+    #openRules{
+        background: none;
+        border: 1px solid #fff;
+        color: #fff;
+        width: 10rem;
+        height: 4rem;
+        font-size: 1.8rem;
+        border-radius: 8px;
+        margin-top: 2rem;
+        font-weight: 600;
+    }
+
+    #resultado{
+        width: 100%;
+        top: 25%;
+        height: 50%;
+        display: none;
+    }
+    #disputa{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10%;
+    }
+    #disputa p{
+        margin-top: 2rem;
+        font-size: 1.3rem;
+        color: #fff;
+    }
+    .pickeds{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 2rem;
+        width: 100%;
+    }
+    #again{
+        width: 100%;
+        height: 10rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        z-index: 4;
+    }
+    #winOrLose{
+        color: #fff;
+        font-size: 4rem;
+    }
+    #playAgain{
+        border: none;
+        background-color: #fff;
+        color: hsl(214, 47%, 23%);
+        width: 12rem;
+        height: 3rem;
+        align-items: center;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        margin-top: 1rem;
+        z-index: 6;
+    }
+
+@media screen and (min-width: 600px) {
+    #scoreDiv{
+        width: 60%;
+    }
+    #rules{
+        width: 70%;
+        height: 70vh;
+        margin: auto;
+        margin-top: 10%;
+    }
+}
+
+@media  screen and (min-width: 940px){
+    #boxOpenRules{
+        text-align: right;
+    }
+    main{
+        padding: 5% 20%;
+        height: 80%;
+    }
+    #boxGame{
+        width: 40rem;
+        height: 70%;
+        background-size: 80%;
+    }
+    .paperDiv{
+        transform: translateX(2rem);
+    }
+    .rockDiv{
+        bottom: 0;
+        transform: translateX(-2rem);
+    }
+    .scissorsDiv{
+        transform: translateX(0);
+        transform: translateY(2rem);
+    }
+    #boxOpenRules{
+        transform: translateY(-10rem);
+    }
+    #icon-close{
+        transform: translateY(-2rem);
+    }
+}
+@media  screen and (min-width: 1120px){
+    #scoreDiv{
+        width: 40%;
+    }
+    #rules{
+        width: 25%;
+    }
+    #again{
+        margin-bottom: 3rem;
+    }
+    main{
+        height: 100%;
+        padding-top: 0;
+    }
+    #boxGame{
+        height: 65%;
+    }
+    .paperDiv{
+        transform: translatey(-1rem);
+    }
+    .rockDiv{
+        bottom: 0;
+        transform: translatey(-1rem);
+    }
+    .scissorsDiv{
+        transform: translateX(0);
+        transform: translateY(3rem);
+    }
+    #boxOpenRules{
+        transform: translateY(-20rem);
+        margin-top: 2rem    ;
+    }
+    
+    
+}

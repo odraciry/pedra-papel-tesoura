@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Rock, Paper, Scissors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Nunito+Sans:ital,wght@0,600;1,300&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div id="container">
+    <!-- regras -->
+    <div id="rules">
+      <h1 id="titleRules">Rules</h1>
+      <div class="imgRulesDiv">
+        <!-- <img src="images/image-rules.svg" alt="" id="imgRules"> -->
+      </div>
+      <img src="images/icon-close.svg" alt="" id="icon-close">
+    </div>
+    <!-- pagina inicial -->
+    <div id="initial-page">
+      <div id="scoreDiv">
+        <div id="divLogo">
+          <img src="images/logo.svg" alt="">
+        </div>
+        <div id="placarDiv">
+          <p>SCORE</p>
+          <h1 id="resultadoPlacar">0</h1>
+        </div>
+      </div>
+      <!-- escolher -->
+      <main>
+        <div id="boxGame">
+          <div id="flex">
+            <div class="icon paperDiv" id="paperDiv">
+            </div>
+            <div class="icon rockDiv" id="rockDiv">
+            </div>
+          </div>
+          <div id="block">
+            <div class="icon scissorsDiv" id="scissorsDiv">
+            </div>
+          </div>
+          <!-- <img src="images/bg-triangle.svg" alt="" id="triangulo"> -->
+        </div>
+        <!-- resultado -->
+        <div id="resultado">
+          <div id="disputa">
+            <div class="pickeds">
+              <div id="youPicked" class="icon">
+
+              </div>
+              <p id="youText">YOU PICKED</p>
+            </div>
+            <div class="pickeds">
+              <div id="pickedHouse" class="icon">
+
+              </div>
+              <p id="houseText">THE HOUSE PICKED</p>
+            </div>
+          </div>
+          <div id="again">
+            <h1 id="winOrLose">YOU LOSE</h1>
+            <button id="playAgain">PLAY AGAIN</button>
+          </div>
+        </div>
+      </main>
+      <div id="boxOpenRules">
+        <button id="openRules">Rules</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
